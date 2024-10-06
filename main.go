@@ -220,7 +220,7 @@ func init() {
 	// 直接写死 URL 时，请更改下面第二个参数
 	url := flag.String("u", "ws://127.0.0.1:6700", "Set Url of WSClient.")
 	// 默认昵称
-	adana := flag.String("n", "灚樗", "Set default nickname.")
+	adana := flag.String("n", "涅泫", "Set default nickname.")
 	prefix := flag.String("p", "/", "Set command prefix.")
 	runcfg := flag.String("c", "", "Run from config file.")
 	save := flag.String("s", "", "Save default config to file and exit.")
@@ -254,7 +254,7 @@ func init() {
 
 	// 通过代码写死的方式添加主人账号
 	 sus = append(sus, 3150378354)
-	 sus = append(sus, 2067944165)
+	 sus = append(sus, 3074363287)
 
 	// 启用 webui
 	// go webctrl.RunGui(*g)
@@ -282,7 +282,7 @@ func init() {
 	}
 	config.W = []*driver.WSClient{driver.NewWebSocketClient(*url, *token)}
 	config.Z = zero.Config{
-		NickName:       append([]string{*adana}, "灚樗"),
+		NickName:       append([]string{*adana}, "涅泫"),
 		CommandPrefix:  *prefix,
 		SuperUsers:     sus,
 		RingLen:        *rsz,
